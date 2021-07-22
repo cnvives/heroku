@@ -1,6 +1,6 @@
 const tips = require('express').Router();
-const { readFromFile, readAndAppend } = require('../heroku/helpers/fsUtils');
-const uuid = require('../heroku/helpers/uuid');
+const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
+const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the tips
 tips.get('/', (req, res) => {

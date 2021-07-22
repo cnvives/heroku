@@ -1,6 +1,6 @@
 const fb = require('express').Router();
-const { readAndAppend } = require('../heroku/helpers/fsUtils');
-const uuid = require('../heroku/helpers/uuid');
+const { readAndAppend } = require('../helpers/fsUtils');
+const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the feedback
 fb.get('/', (req, res) =>
